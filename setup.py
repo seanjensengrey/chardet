@@ -8,9 +8,11 @@ if not hasattr(DistributionMetadata, 'classifiers'):
 if not hasattr(DistributionMetadata, 'download_url'):
     DistributionMetadata.download_url = None
 
+import chardet
+
 setup(
     name = 'chardet',
-    version = '1.0.3',
+    version = chardet.__version__,
     description = 'Universal encoding detector',
     long_description = """\
 Universal character encoding detector
