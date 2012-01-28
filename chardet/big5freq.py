@@ -40,11 +40,16 @@
 # 
 # Typical Distribution Ratio about 25% of Ideal one, still much higher than RDR
 
+from chardet.data_lib import read_freq_table
+
 BIG5_TYPICAL_DISTRIBUTION_RATIO = 0.75
 
 #Char to FreqOrder table
 BIG5_TABLE_SIZE = 5376
 
+Big5CharToFreqOrder = tuple(read_freq_table('big5freq.json','Big5CharToFreqOrder'))
+
+"""
 Big5CharToFreqOrder = ( \
    1,1801,1506, 255,1431, 198,   9,  82,   6,5008, 177, 202,3681,1256,2821, 110, #   16
 3814,  33,3274, 261,  76,  44,2114,  16,2946,2187,1176, 659,3971,  26,3451,2653, #   32
@@ -921,3 +926,4 @@ Big5CharToFreqOrder = ( \
 13936,13937,13938,13939,13940,13941,13942,13943,13944,13945,13946,13947,13948,13949,13950,13951, #13952
 13952,13953,13954,13955,13956,13957,13958,13959,13960,13961,13962,13963,13964,13965,13966,13967, #13968
 13968,13969,13970,13971,13972) #13973
+"""

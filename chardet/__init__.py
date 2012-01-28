@@ -15,7 +15,9 @@
 # 02110-1301  USA
 ######################### END LICENSE BLOCK #########################
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
+
+has_jython_support = True
 
 def detect(aBuf):
     import universaldetector
